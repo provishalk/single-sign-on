@@ -19,7 +19,7 @@ const App = () => {
   return (
     <Security oktaAuth={oktaAuth} restoreOriginalUri={restoreOriginalUri}>
       <Route path='/' exact={true} component={Home} />
-      <SecureRoute path='/protected' component={Protected} />
+      <SecureRoute path='/protect' component={Protected} />
       <Route path='/login/callback' component={LoginCallback} />
     </Security>
   );
